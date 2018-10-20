@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="372bdb9c-dc79-4240-a423-2baca8633a6d" name="Default Changelist" comment="" />
+    <list default="true" id="372bdb9c-dc79-4240-a423-2baca8633a6d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graficador.py" beforeDir="false" afterPath="$PROJECT_DIR$/graficador.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interpolation_cubic_spline_dog.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpolation_cubic_spline_dog.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,27 +20,28 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="9" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="9" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1628" />
+          <entry key="py" value="3677" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1628" />
+          <entry key="Python" value="3677" />
         </counts>
       </usages-collector>
     </session>
@@ -60,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interpolation_cubic_spline_dog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+            <state relative-caret-position="15">
+              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -70,9 +75,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spline_diana.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/-287179200/numpy/core/umath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21285">
+              <caret line="1419" column="4" selection-start-line="1419" selection-start-column="4" selection-end-line="1419" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graficador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="795">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -83,8 +107,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tp4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="15" />
+              <folding>
+                <element signature="e#426#444#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,9 +161,12 @@
       <find>f1(</find>
       <find>f(</find>
       <find>h</find>
+      <find>Graficador</find>
+      <find>numpy</find>
     </findStrings>
     <replaceStrings>
       <replace>f1[</replace>
+      <replace>np</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -146,14 +176,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/interpolacion-cubic-spline.py" />
+        <option value="$PROJECT_DIR$/graficador.py" />
+        <option value="$PROJECT_DIR$/spline_diana.py" />
         <option value="$PROJECT_DIR$/interpolation_cubic_spline_dog.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="698" />
+    <option name="x" value="763" />
     <option name="y" value="22" />
-    <option name="width" value="742" />
+    <option name="width" value="677" />
     <option name="height" value="803" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -164,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,7 +208,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,6 +295,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="spline_diana" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lenguajes_programacion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spline_diana.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tp4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lenguajes_programacion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,10 +342,12 @@
       <item itemvalue="Python.interpolation_cubic_spline_dog" />
       <item itemvalue="Python.graficador" />
       <item itemvalue="Python.tp4" />
+      <item itemvalue="Python.spline_diana" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.interpolation_cubic_spline_dog" />
+        <item itemvalue="Python.spline_diana" />
         <item itemvalue="Python.tp4" />
         <item itemvalue="Python.graficador" />
       </list>
@@ -312,16 +367,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="698" y="22" width="742" height="803" extended-state="0" />
+    <frame x="763" y="22" width="677" height="803" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28294036" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14376321" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46694797" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46329528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -365,59 +420,74 @@
           <line>32</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/interpolation_cubic_spline_dog.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="eval(h[k])" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>c[j+1]</expression-string>
+        <expression-string>x</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>alpha</expression-string>
+        <expression-string>eval(s0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>alpha[n]</expression-string>
+        <expression-string>s0</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>l[n]</expression-string>
+        <expression-string>y0[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>mu[n-2]</expression-string>
+        <expression-string>eval(y0[i])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>h[n-2]</expression-string>
+        <expression-string>eval(h)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>h[n-1]</expression-string>
+        <expression-string>eval(h[k])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>x[i+1]</expression-string>
+        <expression-string>h[k]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>h[i-1]</expression-string>
+        <expression-string>compile(h[k], '&lt;string&gt;', 'eval', __future__.division.compiler_flag)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv3/lib/python3.7/site-packages/matplotlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15821" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interpolacion-cubic-spline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -430,19 +500,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graficador.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/-287179200/numpy/core/umath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="21285">
+          <caret line="1419" column="4" selection-start-line="1419" selection-start-column="4" selection-end-line="1419" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tp4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="210">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#426#444#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -468,15 +539,27 @@
     <entry file="file://$PROJECT_DIR$/lagrange.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv3/lib/python3.7/site-packages/matplotlib/__init__.py">
+    <entry file="file://$PROJECT_DIR$/graficador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15821" />
+        <state relative-caret-position="795">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spline_diana.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="40" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpolation_cubic_spline_dog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        <state relative-caret-position="15">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

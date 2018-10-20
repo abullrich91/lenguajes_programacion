@@ -1,5 +1,6 @@
 from turtle import *
 from math import *
+import __future__
 
 class Graficador:
     def __init__(self, ancho, alto, espaciado=30):
@@ -8,7 +9,7 @@ class Graficador:
         self.espaciado = espaciado
         self.colores = ["red", "blue", "green"]
 
-    def graficar(self, h, desde=-4, hasta=4):
+    def graficar(self, h, desde, hasta):
         clearscreen()
         tracer(3)
         penup()
@@ -41,6 +42,7 @@ class Graficador:
             pass
         for k in range(0, len(h)):
             x = desde
+            ht()
             y0 = eval(h[k])
             penup()
             goto(x * self.espaciado, y0 * self.espaciado)
