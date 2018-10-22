@@ -10,6 +10,7 @@ class Graficador:
         self.colores = ["red", "blue", "green"]
 
     def graficar(self, h, desde, hasta):
+        screensize(self.ancho, self.alto)
         clearscreen()
         tracer(3)
         penup()

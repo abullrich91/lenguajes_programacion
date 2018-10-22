@@ -1,4 +1,8 @@
 from graficador import Graficador
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 def spline (x,a,n,FPO,FPN):
     m = n+1
     alfa = [0]*m
@@ -29,22 +33,33 @@ def spline (x,a,n,FPO,FPN):
         c[j] = z[j] - u[j]*c[j+1]
         b[j] = (a[j+1]-a[j])/h[j] - h[j] *(c[j+1]+2*c[j])/3
         d[j] = (c[j+1]-c[j])/(3*h[j])
-    print(a)
-    print(b[0:n])
-    print(c[0:n])
-    print(d[0:n])
+    #print(a)
+    #print(b[0:n])
+    #print(c[0:n])
+    #print(d[0:n])
     s = list()
     for i in range(0,n):
-        s.append( str(a[i])+"+" + str(b[i])+"*(x-"+str(x[i])+")+"+\
-                  str(c[i])+"*(x-"+ str(x[i]) +")**2+"+str(d[i])+\
-                   "*(x-"+ str(x[i])+ ")**3")
-        print(s[i])
+        #s.append( str(a[i])+"+" + str(b[i])+"*(x-"+str(x[i])+")+"+\
+        #          str(c[i])+"*(x-"+ str(x[i]) +")**2+"+str(d[i])+\
+        #           "*(x-"+ str(x[i])+ ")**3")
+        s.append(str(a[i]) \
+                 + " + np.multiply(" + str(b[i]) + ", np.add(x, -" + str(x[i]) + "))"
+                 + " + np.multiply(" + str(c[i]) + ", np.power(np.add(x, -" + str(x[i]) + "), 2))" \
+                 + " + np.multiply(" + str(d[i]) + ", np.power(np.add(x, -" + str(x[i]) + "), 3))")
+        #print(s[i])
+        plt.plot(x, eval(s[i]))
     inter = list()
     for i in range(0,len(x)-1):
         inter.append((x[i],x[i+1]))
-    Graficador(s,inter)
+    #plt.plot(s,inter)
+    #print("a: ", a)
+    #print("b: ", b)
+    #print("c: ", c)
+    #print("d: ", d)
+    print("s: ", s)
     return a,b,c,d
 
 spline([1,2,5,6,7,8,10,13,17] ,[3.0,3.7,3.9,4.2,5.7,6.6,7.1,6.7,4.5],8,1.0,-0.67)
 spline([17,20,23,24,25,27,27.7],[4.5,7.0,6.1,5.6,5.8,5.2,4.1],6,3.0,-4.0)
 spline([27.7,28,29,30],[4.1,4.3,4.1,3.0],3,0.33,-1.5)
+plt.show()
