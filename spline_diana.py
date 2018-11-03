@@ -39,15 +39,15 @@ def spline (x,a,n,FPO,FPN):
     #print(d[0:n])
     s = list()
     for i in range(0,n):
-        #s.append( str(a[i])+"+" + str(b[i])+"*(x-"+str(x[i])+")+"+\
-        #          str(c[i])+"*(x-"+ str(x[i]) +")**2+"+str(d[i])+\
-        #           "*(x-"+ str(x[i])+ ")**3")
-        s.append(str(a[i]) \
-                 + " + np.multiply(" + str(b[i]) + ", np.add(x, -" + str(x[i]) + "))"
-                 + " + np.multiply(" + str(c[i]) + ", np.power(np.add(x, -" + str(x[i]) + "), 2))" \
-                 + " + np.multiply(" + str(d[i]) + ", np.power(np.add(x, -" + str(x[i]) + "), 3))")
+        s.append( str(a[i])+"+" + str(b[i])+"*(x-"+str(x[i])+")+"+\
+                 str(c[i])+"*(x-"+ str(x[i]) +")**2+"+str(d[i])+\
+                  "*(x-"+ str(x[i])+ ")**3")
+        # s.append(str(a[i]) \
+        #          + " + np.multiply(" + str(b[i]) + ", np.add(x, -" + str(x[i]) + "))"
+        #          + " + np.multiply(" + str(c[i]) + ", np.power(np.add(x, -" + str(x[i]) + "), 2))" \
+        #          + " + np.multiply(" + str(d[i]) + ", np.power(np.add(x, -" + str(x[i]) + "), 3))")
         #print(s[i])
-        plt.plot(x, eval(s[i]))
+        #plt.plot(x, eval(s[i]))
     inter = list()
     for i in range(0,len(x)-1):
         inter.append((x[i],x[i+1]))
@@ -57,9 +57,14 @@ def spline (x,a,n,FPO,FPN):
     #print("c: ", c)
     #print("d: ", d)
     print("s: ", s)
-    return a,b,c,d
+    return a, b, c, d, s
 
-spline([1,2,5,6,7,8,10,13,17] ,[3.0,3.7,3.9,4.2,5.7,6.6,7.1,6.7,4.5],8,1.0,-0.67)
-spline([17,20,23,24,25,27,27.7],[4.5,7.0,6.1,5.6,5.8,5.2,4.1],6,3.0,-4.0)
-spline([27.7,28,29,30],[4.1,4.3,4.1,3.0],3,0.33,-1.5)
+canvas = Graficador(3000, 3000, 30)
+a0, b0, c0, d0, s0 = spline([1,2,5,6,7,8,10,13,17] ,[3.0,3.7,3.9,4.2,5.7,6.6,7.1,6.7,4.5],8,1.0,-0.67)
+a1, b1, c1, d1, s1 = spline([17,20,23,24,25,27,27.7],[4.5,7.0,6.1,5.6,5.8,5.2,4.1],6,3.0,-4.0)
+a2, b2, c2, d2, s2 = spline([27.7,28,29,30],[4.1,4.3,4.1,3.0],3,0.33,-1.5)
+
+s = s0 + s1 + s2
+canvas.graficar(s, 0, 31)
+
 plt.show()
